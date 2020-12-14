@@ -20,7 +20,11 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">    
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
-<body class="overflow-x">    
+<body class="overflow-x">
+  <!-- Boton de volver arriba -->
+  <button onclick="topFunction()" id="myBtn" title="Inicio">Inicio</button>
+
+  <!-- Pagina -->
       <header class="position-relative"> 
           <nav class="navbar navbar-expand-lg navbar-dark position-absolute">            
               <a class="navbar-brand pl115" href="#">
@@ -63,10 +67,10 @@
               <div class="row">
                   <div class="col-lg-6">
                     <div class="info-left px115">                      
-                      <a href="#" target="_blank"><img class="icon-app-store" src="assets/img/logo-app-store.svg" alt="logo App Store"/></a>
-                      <a href="#" target="_blank"><img class="icon-app-googleplay" src="assets/img/logo-google-play.svg" alt="logo App Google Play"/></a>
+                      <a href="https://apps.apple.com/us/app/sudamericana-srl/id1489213047" target="_blank"><img class="icon-app-store" src="assets/img/logo-app-store.svg" alt="logo App Store"/></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.sudseguros.sudsys_clientes&hl=es_BO" target="_blank"><img class="icon-app-googleplay" src="assets/img/logo-google-play.svg" alt="logo App Google Play"/></a>
                       <p>miBigBro es una plataforma desarrollada por:</p>
-                      <a href="#"  target="_blank"><img class="img-fluid" src="assets/img/logo-sudamericana.png" logo="Logo Suramericana" /></a>                  
+                      <a href="https://www.sudseguros.com/"  target="_blank"><img class="img-fluid" src="assets/img/logo-sudamericana.png" logo="Logo Suramericana" /></a>                  
                     </div>
                   </div>
 
@@ -394,8 +398,8 @@
                   </div>  
                   <div class="col-lg-4 col-md-6 col-sm-12  d-flex flex-column justify-content-center">
                     <div class="text-center">
-                      <a href="#" target="_blank"><img class="img-fluid mb-3" src="assets/img/logo-google-play.svg" width="209px" alt="logo-google-play"/></a>
-                      <a href="#" target="_blank"><img class="img-fluid mb-3" src="assets/img/logo-app-store.svg" width="209px" alt="logo-app-store" /></a>
+                      <a href="https://apps.apple.com/us/app/sudamericana-srl/id1489213047" target="_blank"><img class="img-fluid mb-3" src="assets/img/logo-google-play.svg" width="209px" alt="logo-google-play"/></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.sudseguros.sudsys_clientes&hl=es_BO" target="_blank"><img class="img-fluid mb-3" src="assets/img/logo-app-store.svg" width="209px" alt="logo-app-store" /></a>
                       <h5 class="text-center">Baja la aplicación para tu cotización en línea y cómpralo ahora!</h5>
                     </div>                                    
                   </div>  
@@ -718,7 +722,7 @@
                         </div>
                         <div class="collapse" id="collapse_8" aria-labelledby="heading_8" data-parent="#faqAccordion">
                             <div class="card-body">                                 
-                                <p>Se te dará un plan de pago, en el plan podrás ver las fechas máximas en las que debes realizar el pago. Este plan de pagos lo puedes visualizar en “ícono de pagos pendientes”, en este mismo ícono puedes realizar los pagos. Si no pagas hasta la fecha que indica tu plan de pagos entrarás en mora</p>
+                                <p>Se te dará un plan de pago, en el plan podrás ver las fechas máximas en las que debes realizar el pago. Este plan de pagos lo puedes visualizar en <img width="20px" src="assets/img/pago_pendiente.png" />, en este mismo ícono puedes realizar los pagos. Si no pagas hasta la fecha que indica tu plan de pagos entrarás en mora</p>
                                      
                             </div>
                         </div>
@@ -785,7 +789,7 @@
            <div class="row">
             <div class="col-12 text-center">
               <h5 class="mensaje text-center">Extraterritorialidad gratuita por toda la vigencia de la póliza. </h5>
-              <img class="logo-suramericana" src="assets/img/logo-sudamericana-footer.svg" alt="logo Suramericana" />                                    
+              <a href="https://www.sudseguros.com/"  target="_blank"><img class="logo-suramericana" src="assets/img/logo-sudamericana-footer.svg" alt="logo Suramericana" /></a>
             </div>
            </div>
            <div class="row">
@@ -803,6 +807,27 @@
       <script src="assets/js/bootstrap.min.js" type="text/javascript" ></script>
       <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
       <script src="assets/js/custom.js" type="text/javascript" ></script>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
       <!--End Plugin Publinet-->
       
 </body>
