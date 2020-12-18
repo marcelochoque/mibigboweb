@@ -736,9 +736,9 @@ strong {
   #comoFunciona .item-1 .detail, #comoFunciona .item-2 .detail, #comoFunciona .item-3 .detail, #comoFunciona .item-4 .detail, #comoFunciona .item-5 .detail, #comoFunciona .item-6 .detail, #comoFunciona .item-7 .detail, #comoFunciona .item-8 .detail {
     font-style: normal;
     font-weight: 200;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 28px;
-    opacity: 0.63;
+    opacity: 1;
   }
   #comoFunciona .item-1 {
     left: 23.94%;
